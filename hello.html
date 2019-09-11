@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!-- testValの内容を表示 -->
+    {{ testVal }}
+</div>
+</body>
+<script>
+    const app = new Vue({
+        el: '#app',
+
+        data: {
+            testVal: 'Hello World!'
+        }
+    });
+</script>
+</html>
