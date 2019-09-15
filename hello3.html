@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="vue.js"></script>
+    <title>Title</title>
+</head>
+<body>
+  <div id="app-3">
+    <span v-if="seen">Now you see me</span>
+  </div>
+</body>
+<script>
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+})
+setTimeout(()=>{
+  app3.seen=false;
+
+},2000);
+setTimeout(()=>{
+  app3.seen=true;
+
+},4000);
+</script>
+</html>
